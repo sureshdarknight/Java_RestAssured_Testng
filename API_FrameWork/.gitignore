@@ -1,1 +1,9 @@
 /target/
+
+#Test output reports:
+/test-output
+
+#intellij Files
+.idea/
+*.iml
+
