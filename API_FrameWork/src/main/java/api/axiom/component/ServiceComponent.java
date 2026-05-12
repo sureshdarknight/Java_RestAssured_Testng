@@ -24,6 +24,7 @@ public class ServiceComponent extends CoreApi {
 			RestAssured.baseURI = uriFilePath;
 			response = given().header("content-Type", ContentType.JSON, "Accept", ContentType.JSON).when()
 					.get(resourceFilePath).then().extract().response();
+			System.out.println("The output is: " +response.getBody().asString());
 
 		} catch (Exception e) {
 			System.out.println(e.getMessage());

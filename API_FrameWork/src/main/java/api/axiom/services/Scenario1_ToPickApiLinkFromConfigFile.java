@@ -28,7 +28,7 @@ public class Scenario1_ToPickApiLinkFromConfigFile extends CoreApi {
 			response = servicecomponent.invokeRestServiceEmployees(CoreApi.uri, CoreApi.employeesresources);
 			// Assert Status code as 200
 			Assert.assertEquals(200, response.getStatusCode());
-			logger.log(Status.PASS, MarkupHelper.createLabel("Scenario 1: Status code from API returns successfull: " +response.getStatusCode(), ExtentColor.GREEN));
+			logger.log(Status.PASS, MarkupHelper.createLabel("Scenario 1: Status code from API returns successfully: " +response.getStatusCode(), ExtentColor.GREEN));
 			System.out.println("Status code is successfully validated as " + response.getStatusCode());
 			System.out.println("Scenario 1: Assertion status code end");
 		} catch (Exception e) {
